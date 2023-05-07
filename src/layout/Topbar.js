@@ -19,6 +19,9 @@ function Topbar () {
                             <Link to="/" className={ "nav-link" + ( ( location.pathname == "/" ) ? " active" : "" ) }>Home</Link>
                         </li>
                         <li className="nav-item">
+                            <Link to="/blockchain" className={ "nav-link" + ( ( location.pathname == "/blockchain" ) ? " active" : "" ) }>Blockchain Stuff</Link>
+                        </li>
+                        <li className="nav-item">
                             <Link to="/blog" className={ "nav-link" + ( ( location.pathname == "/blog" ) ? " active" : "" ) }>Blog</Link>
                         </li>
                         <li className="nav-item">

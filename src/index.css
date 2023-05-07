@@ -35,3 +35,17 @@ body {
 .mt-n4 {
     margin-top: -1.5rem !important;
 }
+
+.pretty-json {
+    background-color: #1f4662;
+    color: #fff;
+    font-size: 14px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.pretty-json pre {
+    display: block;
+    padding: 10px 30px;
+    margin: 0;
+}

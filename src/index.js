@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import NoPage from "./pages/NoPage";
 import Article from "./pages/Blog/Article";
+import Blockcahin from "./pages/Blockchain/Blockchain";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -25,6 +26,7 @@ root.render(
                 <Route path="contact" element={<Contact/>}/>
                 <Route path="about" element={<About/>}/>
                 <Route path="*" element={<NoPage/>}/>
+                <Route path="blockchain" element={<Blockcahin/>}/>
             </Route>
         </Routes>
     </BrowserRouter>
