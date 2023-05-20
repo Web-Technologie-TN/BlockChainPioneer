@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function Blockcahin() {
 
-    const BASE_API_URL = "http://localhost:5000/";
+    const BASE_API_URL = process.env.REACT_APP_BASE_API_URL;
 
     const [loading1, setLoading1] = useState(1);
     const [data1, setData1] = useState({});
@@ -59,13 +59,13 @@ export default function Blockcahin() {
                 </div>
                 <div className="card-body p-0">
                     {
-                        loading1 == 2 &&
+                        loading1 === 2 &&
                         <div className="text-center p-5">
                             <i className="fa-solid fa-spin fa-spinner fa-4x text-secondary"></i>
                         </div>
                     }
                     {
-                        loading1 == 3 &&
+                        loading1 === 3 &&
                         <div className="pretty-json">
                             <pre>{ JSON.stringify(data1, null, 2) }</pre>
                         </div>
@@ -86,13 +86,13 @@ export default function Blockcahin() {
                 </div>
                 <div className="card-body p-0">
                     {
-                        loading2 == 2 &&
+                        loading2 === 2 &&
                         <div className="text-center p-5">
                             <i className="fa-solid fa-spin fa-spinner fa-4x text-secondary"></i>
                         </div>
                     }
                     {
-                        loading2 == 3 &&
+                        loading2 === 3 &&
                         <div className="pretty-json">
                             <pre>{ JSON.stringify(data2, null, 2) }</pre>
                         </div>
