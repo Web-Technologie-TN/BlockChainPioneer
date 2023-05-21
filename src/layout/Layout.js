@@ -27,14 +27,14 @@ function Layout () {
 
                 <div className="container">
                     <div className="row">
-                        <div className={ ( location.pathname == "/" || location.pathname == "/blockchain" || location.pathname == "/contact" ) ? "col-12" : "col-8" }>
+                        <div className={ ( location.pathname == "/" || location.pathname == "/blockchain" || location.pathname == "/blockchain_charts" || location.pathname == "/contact" ) ? "col-12" : "col-8" }>
 
                             <Outlet/>
 
                         </div>
                         {
 
-                            ( location.pathname != "/" && location.pathname != "/blockchain" && location.pathname != "/contact" ) &&
+                            ( location.pathname != "/" && location.pathname != "/blockchain" && location.pathname != "/blockchain_charts" && location.pathname != "/contact" ) &&
 
                             <div className="col-lg-4">
 
