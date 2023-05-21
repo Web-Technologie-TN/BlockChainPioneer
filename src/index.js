@@ -28,7 +28,7 @@ root.render(
                 <Route path="about" element={<About/>}/>
                 <Route path="*" element={<NoPage/>}/>
                 <Route path="blockchain" element={<Blockcahin/>}/>
-                <Route path="blockchain_charts" element={<BlockchainCharts/>}/>
+                <Route path="charts" element={<BlockchainCharts/>}/>
             </Route>
         </Routes>
     </BrowserRouter>

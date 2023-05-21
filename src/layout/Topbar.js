@@ -22,7 +22,7 @@ function Topbar () {
                             <Link to="/blockchain" className={ "nav-link" + ( ( location.pathname == "/blockchain" ) ? " active" : "" ) }>Bicoin Apis</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/blockchain_charts" className={ "nav-link" + ( ( location.pathname == "/blockchain_charts" ) ? " active" : "" ) }>Bicoin Charts</Link>
+                            <Link to="/charts" className={ "nav-link" + ( ( location.pathname == "/charts" ) ? " active" : "" ) }>Charts</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/blog" className={ "nav-link" + ( ( location.pathname == "/blog" ) ? " active" : "" ) }>Blog</Link>
